@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  equeuenameserver:
+    image: ${DOCKER_REGISTRY-}equeuenameserver
+    build:
+      context: .
+      dockerfile: EQueueNameServer/Dockerfile
